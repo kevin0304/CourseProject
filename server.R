@@ -32,7 +32,7 @@ shinyServer(
                         lower <- quantile(distribution, probs = 0.025)
                         upper <- quantile(distribution, probs = 0.975)
                         hist(distribution, freq = FALSE,
-                             xlab = paste("You will likely have between", lower, "and", upper, "seizure in the next month."),
+                             xlab = paste("You will likely have between", lower, "and", upper, "seizure/s in the next month."),
                              main = "Histogram of Seizure distribution in the next month")
                         abline(v=lambda, col="blue", lwd=3)
                         abline(v=lower , col="red", lwd=2)
